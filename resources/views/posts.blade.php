@@ -13,7 +13,12 @@
                             {{ session('status') }}
                         </div>
                     @endif
-                    asdfasdf
+
+
+                    @foreach($posts as $post)
+                        {{$post->id}}
+                    @endforeach
+
 
                     You are logged in!
                 </div>
